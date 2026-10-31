@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OrderBox — Flat-Fee Online Ordering, No Commission</title>
-<meta name="description" content="OrderBox is flat-fee online ordering for independent restaurants running their own drivers. £99 a month, with no commission and no per-order fees.">
+<meta name="description" content="OrderBox is flat-fee online ordering for independent restaurants running their own drivers. £99 a month, with no commission.">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
@@ -142,6 +142,10 @@
     max-width: 620px;
     margin: 0 auto 32px;
   }
+
+  .fee-note { font-size: 13px; color: var(--ink-soft); }
+  .hero .fee-note { margin: 16px 0 0; }
+  section.how .fee-note { text-align: center; margin: 24px 0 0; }
 
   section.what { padding: 0 24px 72px; }
   section.what .section-head { margin-bottom: 0; }
@@ -343,6 +347,7 @@
   .lead-form textarea { resize: vertical; min-height: 80px; }
   .lead-form .btn { width: 100%; margin-top: 22px; }
   .lead-form .hp { position: absolute; left: -9999px; }
+  section.cta form + .form-note { margin-top: 32px; }
   .form-note {
     text-align: center;
     font-size: 13px;
@@ -399,9 +404,10 @@
     <h1>Stop Paying Commission on Deliveries You Already Do Yourself</h1>
     <p class="sub">
       OrderBox is flat-fee online ordering for independent restaurants running their own drivers.
-      £99 a month. No commission, no per-order fees, ever — no matter how busy you get.
+      £99 a month. No commission, no per-order fees*, ever — no matter how busy you get.
     </p>
     <a href="#cta" class="btn">Get Started</a>
+    <p class="fee-note">*Stripe, our payment provider, charges its own processing fees on card payments.</p>
   </div>
 </section>
 
@@ -463,10 +469,11 @@
       </div>
       <div class="step">
         <div class="num">3</div>
-        <h3>You keep 100%, minus £99/mo</h3>
+        <h3>You keep 100%, minus £99/mo*</h3>
         <p>Your own drivers do the delivery, same as always. You just stop paying a cut for the privilege.</p>
       </div>
     </div>
+    <p class="fee-note">*Stripe, our payment provider, charges its own processing fees on card payments.</p>
   </div>
 </section>
 
