@@ -105,7 +105,7 @@
     transition: background 0.15s ease;
   }
   .btn:hover { background: var(--accent-dark); }
-  .btn.small { padding: 9px 18px; font-size: 14px; }
+  .btn.small { padding: 9px 18px; font-size: 14px; white-space: nowrap; }
 
   main { max-width: 720px; margin: 0 auto; padding: 72px 24px; }
   .eyebrow {
@@ -165,6 +165,12 @@
     color: #9aa1ab;
   }
   .footer-legal { margin: 8px 0 0; font-size: 12px; }
+
+  @media (max-width: 400px) {
+    .nav { padding: 14px 16px; }
+    .nav-right { gap: 8px; }
+    .btn.small { padding: 9px 12px; }
+  }
 
   @media (max-width: 720px) {
     main { padding: 48px 24px; }
@@ -253,6 +259,7 @@
     Registered office: 21 Sperling Drive, Haverhill, England, CB9 9SG.
     Contact: <a href="mailto:info@orderbox.me">info@orderbox.me</a>
   </p>
+  <p class="footer-legal"><a href="about.html">About</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
 </footer>
 
 <script>

@@ -9,6 +9,7 @@ services:
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html:ro
       - ./about.html:/usr/share/nginx/html/about.html:ro
+      - ./privacy.html:/usr/share/nginx/html/privacy.html:ro
       - ./assets:/usr/share/nginx/html/assets:ro
     networks:
       - traefik_proxy

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OrderBox — Flat-Fee Online Ordering, No Commission</title>
+<meta name="description" content="OrderBox is flat-fee online ordering for independent restaurants running their own drivers. £99 a month, with no commission and no per-order fees.">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
@@ -114,7 +115,7 @@
     transition: background 0.15s ease;
   }
   .btn:hover { background: var(--accent-dark); }
-  .btn.small { padding: 9px 18px; font-size: 14px; }
+  .btn.small { padding: 9px 18px; font-size: 14px; white-space: nowrap; }
 
   .hero {
     padding: 96px 24px 72px;
@@ -141,6 +142,9 @@
     max-width: 620px;
     margin: 0 auto 32px;
   }
+
+  section.what { padding: 0 24px 72px; }
+  section.what .section-head { margin-bottom: 0; }
 
   section.clients {
     padding: 64px 24px;
@@ -360,6 +364,12 @@
     .reveal { opacity: 1; transform: none; transition: none; }
   }
 
+  @media (max-width: 400px) {
+    .nav { padding: 14px 16px; }
+    .nav-right { gap: 8px; }
+    .btn.small { padding: 9px 12px; }
+  }
+
   @media (max-width: 720px) {
     .hero h1 { font-size: 32px; }
     .steps { grid-template-columns: 1fr; }
@@ -392,6 +402,20 @@
       £99 a month. No commission, no per-order fees, ever — no matter how busy you get.
     </p>
     <a href="#cta" class="btn">Get Started</a>
+  </div>
+</section>
+
+<section class="what">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What OrderBox Does</h2>
+      <p>
+        OrderBox is online ordering software for independent restaurants that deliver with their
+        own drivers. Customers place orders on the restaurant's own website, and each order prints
+        on the restaurant's in-store printer, ready for the kitchen. The restaurant pays a flat
+        monthly fee instead of commission.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -510,6 +534,7 @@
     </form>
 
     <p class="form-note">We'll get back to you within one working day — no obligation, no card required. Prefer email? <a href="mailto:info@orderbox.me">info@orderbox.me</a></p>
+    <p class="form-note">See our <a href="privacy.html">Privacy Policy</a> for how we use your details.</p>
   </div>
 </section>
 
@@ -520,6 +545,7 @@
     Registered office: 21 Sperling Drive, Haverhill, England, CB9 9SG.
     Contact: <a href="mailto:info@orderbox.me">info@orderbox.me</a>
   </p>
+  <p class="footer-legal"><a href="about.html">About</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
